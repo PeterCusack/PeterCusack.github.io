@@ -1,0 +1,18 @@
+.center {
+  text-align: center;
+}
+
+.blogtitle {
+  clear: both;
+}
+
+#DBCpic {
+  float: right;
+  margin-top: -200px;
+}
+
+#single-post {
+  text-align: center;
+  width: 70%;
+
+}
