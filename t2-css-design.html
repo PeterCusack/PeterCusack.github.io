@@ -22,27 +22,27 @@
   <h4>1/12/2014</h4>
 <p>
 When you create an element in html it's default positioning is <em>Static</em>. Static isn't really a type of positioning its more of a lack of positioning. So if you entered something on to a page lets say a < p> and then you added a margin or padding to it, as far as I know it's still a static. To make an element either relative, absolute or fixed you have to add
-
+<br>
 position: (relative,fixed or absolute);
-
+<br>
 Now what exactly is each of these.
-
+<br>
 <strong>Relative:</strong> We will start with relative, in my opinion it is the the base for all the rest. When something is positioned relatively it means that it is positioned according to its parent element.
-
+<br>
 For example:
-
+<br>
 < div class="parent">
-
+<br>
 < p class="child"> relatively positioned < /p>
-
+<br>
 < /div>
-
+<br>
 Now if we positioned the .child element top: 10px; it would be 10 px away from the top of the .parent element as instead of the browser window. Relatively place elements are still in the flow of the document. Meaning they still move other elements out of the way when it is placed somewhere.
-
+<br>
 <strong>Absolute:</strong> Something that is absolutely positioned is positioned as if its parent element was the < html> tag so the webpage itself. So it does not adjust is positioned based on how big the webpage is or where its parent elements are moved to. Also, absolutely positioned elements are removed from the flow of a document. So they can be placed anywhere and all the other elements in the place will act as though it is not there. It does however move with the scrolling of the page.
-
+<br>
 <strong>Fixed:</strong>fixed is the most extreme form of positioning. It mean that the element will not move from its position on the browser screen or as the html page is scrolled through. It is fixed to the point on the screen. If you look in the bottom left of this website you will see some social links, those are fixed positioning,  if you scroll you can see they stay in the exact same place the page. After you admire how cool the fixed positioning is you should go and follow all of those links.
-
+<br>
 </p>
 </section>
 <footer>
