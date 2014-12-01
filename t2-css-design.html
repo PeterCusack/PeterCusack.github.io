@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Peter Cusacks Blog</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+</head>
+<body class="white">
+  <nav>
+  <ul class="style-none nav-bar" >
+    <a href="portfolio.html"><li class="portfolio light-gray">Portfolio</li></a>
+    <a href="index.html" ><li class="light-gray about">About Me</li></a>
+    <a href="blog-template.html"><li class=" light-red blog">Blog</li></a>
+  </ul>
+ <!--  <div id="arrow-about"><p>&#9650</p></div> -->
+    <hr class="portfolio-hr light-red">
+  </nav>
+
+  <section class="center white">
+
+ <h2>Relative, Absolute or Fixed? How to know when to use which</h2>
+  <h4>1/12/2014</h4>
+<p>
+When you create an element in html it's default positioning is <em>Static</em>. Static isn't really a type of positioning its more of a lack of positioning. So if you entered something on to a page lets say a < p> and then you added a margin or padding to it, as far as I know it's still a static. To make an element either relative, absolute or fixed you have to add
+
+position: (relative,fixed or absolute);
+
+Now what exactly is each of these.
+<strong>Relative:</strong> We will start with relative, in my opinion it is the the base for all the rest. When something is positioned relatively it means that it is positioned according to its parent element.
+For example:
+
+< div class="parent">
+
+< p class="child"> relatively positioned < /p>
+
+< /div>
+
+Now if we positioned the .child element top: 10px; it would be 10 px away from the top of the .parent element as instead of the browser window. Relatively place elements are still in the flow of the document. Meaning they still move other elements out of the way when it is placed somewhere.
+
+<strong>Absolute:</strong> Something that is absolutely positioned is positioned as if its parent element was the < html> tag so the webpage itself. So it does not adjust is positioned based on how big the webpage is or where its parent elements are moved to. Also, absolutely positioned elements are removed from the flow of a document. So they can be placed anywhere and all the other elements in the place will act as though it is not there. It does however move with the scrolling of the page.
+
+<strong>Fixed:</strong>fixed is the most extreme form of positioning. It mean that the element will not move from its position on the browser screen or as the html page is scrolled through. It is fixed to the point on the screen. If you look in the bottom left of this website you will see some social links, those are fixed positioning,  if you scroll you can see they stay in the exact same place the page. After you admire how cool the fixed positioning is you should go and follow all of those links.
+
+</p>
+
+</section>
+<footer>
+  <ul class="footer-bar style-none">
+  <li class="social-logo"><a href="http://instagram.com/cusackpeter"><img src="images/instagram-logo.jpg" alt="instagram socail link cusackpeter" ></a></li>
+  <li class="social-logo"><a href="https://twitter.com/PeterCusack_"><img src="images/twitter-logo.jpg" alt="twitter socail link cusackpeter" ></a></li>
+  <li class="social-logo"><a href="https://github.com/PeterCusack"><img src="images/github-logo.jpg" alt="github socail link petercuasck" ></a> </li>
+  </ul>
+</footer>
+</body>
+</html>
+
