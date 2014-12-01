@@ -14,16 +14,46 @@ background: #00C8FF;
   text-align: center;
 }
 
+hr {
+
+
+
+/*background: black;
+color: black;
+width: 33%;
+float: left;
+margin: -10px 0 0 0;*/
+}
+
+.light-blue {
+  background: #00C8FF;
+}
+
+.light-green {
+  background: #7BFF86;
+}
+
+.light-red{
+   background:  #FF5F56;
+}
+.light-gray {
+background: #D6D3E8;
+}
+
+.white {
+  background: #fff;
+}
+
+
 /* Nav formating*/
 .nav-bar {
-  margin: -30px 0 -50px -4%;
+  margin: -30px 0 0px -4%;
   text-align: center;
   background: #fff;
 }
 
 .nav-bar li {
     display: inline-block;
-    background: #D6D3E8;
     color: #fff;
     padding: 15px 0 0 0;
     width: 125px;
@@ -35,10 +65,34 @@ background: #00C8FF;
   background: #00C8FF;
 }
 
-/* About me page formatting*/
-.page-contents {
-  padding: 50px;
+.headerline {
+width: 100%;
+height: 5px;
+background: black;
+}
+
+
+.portfolio-hr {
+  height: 5px;
+  border: none;
+  margin: -10px 0 0 0
+}
+
+.about:hover {
   background: #00C8FF;
+}
+
+ .portfolio:hover {
+background: #7BFF86;
+ }
+
+ .blog:hover {
+  background:  #FF5F56;
+ }
+/* About me page formatting*/
+.me-content {
+  padding: 50px;
+  background: #fFF;
   margin: 0 0 0 0;
 }
 
@@ -57,6 +111,71 @@ background: #00C8FF;
   width: 500px;
   margin: auto
 }
+
+
+
+/* portfolio*/
+.portfolio-contents {
+width: 100%;
+height:500px;
+}
+.coming-soon {
+  padding: 10px;
+  color: #fff;
+  width: 200px;
+  height: 20px;
+  margin: auto;
+
+}
+
+/* blog page*/
+
+.blog-head {
+  width: 60%;
+  margin: auto
+}
+
+.blog-date {
+  font-size: 10px;
+}
+.culture-blog {
+  width: 50%;
+  height: 500px;
+  background: #FFD57B;
+  float: left;
+}
+
+.culture-blog {
+  width: 50%;
+  height: 500px;
+  background: #FFD57B;
+  float: left;
+}
+
+.culture-post {
+  width: 50%;
+  background: #11F6FF;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+.technical-blog {
+  width: 50% ;
+  height: 500px;
+  background: #E84C8C;
+  float: right;
+}
+
+.technical-post {
+  width: 50%;
+  background: #4EFF9B;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+
+
 
 /* footer formatting*/
 

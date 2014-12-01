@@ -1,6 +1,6 @@
 Newb to Newb
 
-My thought after watching the fire side chat
+The Talk
 
 11/23/14
 
