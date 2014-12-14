@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Peter Cusacks Blog</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+</head>
+<body class="white">
+  <nav>
+  <ul class="style-none nav-bar" >
+    <a href="portfolio.html"><li class="portfolio light-gray">Portfolio</li></a>
+    <a href="index.html" ><li class="light-gray about">About Me</li></a>
+    <a href="blog-template.html"><li class=" light-red blog">Blog</li></a>
+  </ul>
+ <!--  <div id="arrow-about"><p>&#9650</p></div> -->
+    <hr class="portfolio-hr light-red">
+  </nav>
+
+  <section class="center white">
+
+ <h2>What is an Enumerable and how to use .group_by </h2>
+  <h4>7/12/2014</h4>
+<p>
+Let's start out with what is an Enumerable. Enumerable its a gross long word but once you understand what an enumerable is it will carry many positive connotations. An Enumerable is a simplified version of doing something like a <code> .each do </code> loop. Ill show you an example of one at work and then explain what is going on. <br>
+<code>
+ary = [1, 2, 4, 2]
+ary.count{ |x| x%2==0 } #=> 3
+</code><br>
+this is an example right from the Ruby docs. What is happening here is that the method count is being called on an array. The method count without any Enumerable will just display how many items <code>ary</code> has. But with the provided  Enumerable it is displaying how many elements in the array are divisible by 2. The <code>|x|</code> at the beginning is the same as in a z<code>do</code> statement. It is assigning each element to that then running it through the following test and adding it to the count if the test evaluates to true.
+<br>
+Now for the .group_by method. The group by method is very interesting it, I'll give you an example and then explain it below. (this example comes from http://markusjais.com/ because the one on Ruby docs wasn't very good )
+<code>
+cats = ["Tiger", "Lion", "Puma", "Leopard", "Jaguar",
+        "Cheetah", "Bobcat"]
+grouped_by_length = cats.group_by { |cat| cat.length }
+
+#{5=>["Tiger"], 4=>["Lion", "Puma"], 7=>["Leopard", "Cheetah"], 6=>["Jaguar", "Bobcat"]}
+</code>
+What is happening here is that the array <code>cats</code> it getting put into a Hash that has keys of the grouping method and values that match that key. So for this example each cat is being grouped by the number of letters its name contains, or the .length of it's string. From this the group_by method says " okay we have string with 4 letters are there another strings with 4 letters? yes 1 more, lets put that into a hash called 4". It is fairly simple but could be used as a very powerful sorting method.
+<br>
+This is just a very simple explanation of enumerables and I don't really understand everything about them but I hope this gives you a start to understanding them.
+</p>
+
+</section>
+<footer>
+  <ul class="footer-bar style-none">
+  <li class="social-logo"><a href="http://instagram.com/cusackpeter"><img src="images/instagram-logo.jpg" alt="instagram socail link cusackpeter" ></a></li>
+  <li class="social-logo"><a href="https://twitter.com/PeterCusack_"><img src="images/twitter-logo.jpg" alt="twitter socail link cusackpeter" ></a></li>
+  <li class="social-logo"><a href="https://github.com/PeterCusack"><img src="images/github-logo.jpg" alt="github socail link petercuasck" ></a> </li>
+  </ul>
+</footer>
+</body>
+</html>
+
