@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Peter Cusacks Blog</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+</head>
+<body class="white">
+  <nav>
+  <ul class="style-none nav-bar" >
+    <a href="portfolio.html"><li class="portfolio light-gray">Portfolio</li></a>
+    <a href="index.html" ><li class="light-gray about">About Me</li></a>
+    <a href="blog-template.html"><li class=" light-red blog">Blog</li></a>
+  </ul>
+ <!--  <div id="arrow-about"><p>&#9650</p></div> -->
+    <hr class="portfolio-hr light-red">
+  </nav>
+
+  <section class="white">
+
+ <h2>A short class on Class'</h2>
+  <h4>4/1/2015</h4>
+<p>
+So you know about methods, something you can store sets of code in that will run whenever it is called on an object. Now a Class is something that you can store a set of methods in and call those methods on anything that is an instance of that class. Now thats a lot of information so let me break it down for you. Lets try and compare this to a real worldish example a Class would be personal computer and the instance of the class would be Macbook Pro. All person computers have certain traits they are mobile they have a battery and things like this. But also each personal computer is different in things like size and weight. Now to create this personal computer class is very simple and we have seen it before on this blog. <code> class PersonalComputer</code> note that the class name must start with a capital letter. After you have declared a class you nest things inside it just like you would do with a method. For example <pre><code>
+class PersonalComputer
+
+  def intilize weight size
+  @size = size
+  @weight = weight
+  end
+
+  def charge
+  p batter_percent
+  end
+
+  def weight
+  p @weight
+  end
+</code>
+</pre>
+The first thing we do here is declare a class after that we have the <code> def initialize size weight</code> what this does is create two variables that are filled when we create a new instance of a class for are earlier example of a Macbook Pro it would be <code>macbook_pro = PersonalComputer.new "6lbs","15in"</code> This assinges the weight 6lbs and the size 15in to this specfic instance of this class now whenever the weight method is called on this instance it will put out 6lbs instead of the wieght of a different computer. We do this through the use of instance variables. These are the variable names that are prefaced with @. it is kind of like <code>this</code> in javascript. It allows you to reference the variable that is specific to this instance.
+  That is a quick over view of classes and there is a lot to them and I don't understand a lot of it but I hope it was somewhat informative to you.
+</p>
+
+</section>
+<footer>
+  <ul class="footer-bar style-none">
+  <li class="social-logo"><a href="http://instagram.com/cusackpeter"><img src="images/instagram-logo.jpg" alt="instagram socail link cusackpeter" ></a></li>
+  <li class="social-logo"><a href="https://twitter.com/PeterCusack_"><img src="images/twitter-logo.jpg" alt="twitter socail link cusackpeter" ></a></li>
+  <li class="social-logo"><a href="https://github.com/PeterCusack"><img src="images/github-logo.jpg" alt="github socail link petercuasck" ></a> </li>
+  </ul>
+</footer>
+</body>
+</html>
+
