@@ -138,9 +138,7 @@ height:500px;
 .blog-date {
   font-size: 10px;
 }
-.blog-list li {
-  margin: 10px;
-}
+
 .culture-blog {
   width: 50%;
   height: 500px;
@@ -177,8 +175,8 @@ height:500px;
   padding: 10px;
 }
 
-.blog-list a {
-margin: 10px 0 10px 0;
+.blog-list li {
+margin: 10px auto 10px auto;
 }
 
 

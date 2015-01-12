@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Peter Cusacks Blog</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+</head>
+<body class="white">
+  <nav>
+  <ul class="style-none nav-bar" >
+    <a href="portfolio.html"><li class="portfolio light-gray">Portfolio</li></a>
+    <a href="index.html" ><li class="light-gray about">About Me</li></a>
+    <a href="blog-template.html"><li class=" light-red blog">Blog</li></a>
+  </ul>
+ <!--  <div id="arrow-about"><p>&#9650</p></div> -->
+    <hr class="portfolio-hr light-red">
+  </nav>
+
+  <section class="white">
+
+ <h2>What Varuable to use where</h2>
+  <h4>1/11/2015</h4>
+<p>
+I'm just going to get right into it with this one, here is a list of all the variable types that you can use in Ruby in order of what I consider to be there intensity.
+</b>
+local
+</b>
+@intance
+</b>
+@@class
+</b>
+Constant
+</b>
+$Global
+</b>
+Now the first variable is a local variable which is a little misleading because almost all variable in ruby are technically local to somewhere but more on that later. A local variable always begins with a lowercase letter and is local only to the scope example below:
+ <pre><code>
+def localtest
+
+  peter = 18
+
+  array = [1,2,3,4]
+
+  array.each do |i|
+
+    i + peter
+
+  end
+end
+
+puts peter
+</code></pre>
+Now if you typed the code above in it would give you an error this is because the local variable peter does not mean anything inside the scope of the do statement or outside the scope of the method #localtest. Now if I defined a variable inside the do statement with the same name but a different value the code would work because the variables do not conflict.
+</b>
+Now onto an instance variable, they can only be used inside of an class structure and they always begin with an @ sign. They are variable that store data that is specific to an instance of that class. So if you had a class called dogs and wanted to store each dogs age on initialization then you would do something like this.
+<pre><code>
+class Dogs
+
+  def initialize(age)
+    @age = age
+  end
+
+  def get_age
+    puts @age
+  end
+end
+
+frank = Dogs.new(5)
+
+doug= Dogs.new(8)
+
+frank.get_age => 5
+
+doug.get_age => 8
+</code></pre>
+It is an indispensable tool when working in an object oriented language.
+<b>
+Similar is the class variable, this variable is always prefaced with @@ and also can only me used inside a class. if used in the previous example it would look like this:
+<pre><code>
+class Dogs
+
+  def initialize(age)
+    @age = age
+    @@bread = big-dog
+  end
+
+  def get_age
+    puts @age
+    puts @@bread
+  end
+end
+
+frank = Dogs.new(5)
+
+doug= Dogs.new(8)
+
+frank.get_age => 5 big dog
+
+doug.get_age => 8 big dog
+</code></pre>
+Class variables are class wide and are the same for all instances of a class.
+</b>
+The Constant variable is like a Class and Global variable hybrid, if it is created in a class it will act the same as a @@class variable however used outside a class it will act as a global variable and be the same everywhere inside a program. I class variable's first letter is always a capital. a global variable is very similar, but it can be used everywhere no matter where it is declared, it is always prefaced with a $ sign. Both Constant and $gobal variables are usually advised against being used but are useful in certain circumstances.
+</p>
+
+
+</section>
+<footer>
+  <ul class="footer-bar style-none">
+  <li class="social-logo"><a href="http://instagram.com/cusackpeter"><img src="images/instagram-logo.jpg" alt="instagram socail link cusackpeter" ></a></li>
+  <li class="social-logo"><a href="https://twitter.com/PeterCusack_"><img src="images/twitter-logo.jpg" alt="twitter socail link cusackpeter" ></a></li>
+  <li class="social-logo"><a href="https://github.com/PeterCusack"><img src="images/github-logo.jpg" alt="github socail link petercuasck" ></a> </li>
+  </ul>
+</footer>
+</body>
+</html>
+
