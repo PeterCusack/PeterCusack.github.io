@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Peter Cusacks Blog</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+</head>
+<body class="white">
+  <nav>
+  <ul class="style-none nav-bar" >
+    <a href="portfolio.html"><li class="portfolio light-gray">Portfolio</li></a>
+    <a href="index.html" ><li class="light-gray about">About Me</li></a>
+    <a href="blog-template.html"><li class=" light-red blog">Blog</li></a>
+  </ul>
+ <!--  <div id="arrow-about"><p>&#9650</p></div> -->
+    <hr class="portfolio-hr light-red">
+  </nav>
+
+  <section class="white">
+
+ <h2>Classes (Ruby) vs. Constructors (Javascript)</h2>
+  <h4>1/18/2015</h4>
+<p>
+This week at Dev Bootcamp we switched from Ruby to Javascript. Which was a little bit discouraging because we were just getting good at Ruby and then we had to switch to something totally new. Even still when I am looking at the challenges I am thinking in my head how to do them in Ruby. However, as I have started to learn more and more Javascript I have begun to see that the languages although very different in syntax are not that different in how they can be used. This of course is with my base knowledge of these things and it very well might be that once I know the inns and outs of the languages I will see that they are very different. <b/>
+One thing that they both can do in a way is create a class/object and create instances of that. Ruby is built for this more it seems since you can so easily put together a class with different methods inside it, however in javascript you have to create a function to construct these new objects. But they both accomplish the same task. Objects in Javascript resemble Hashes' in Ruby, you assign a name to a value. That value can be either be a string, boolean, number or unlike a Ruby hash a function. <b/>
+In Javascript you use the keyword this instead of the @@ like in a ruby class, below I will give a simple examples of both a Ruby class and Javascript object constructor.
+<pre><code>
+
+  <b> Javascript</b>
+function car(model) {
+  this.model = model;
+  this.paint = function() {
+    prompt( "what color is your car" )
+  }
+}
+
+bwm = new car("bwm")
+bwm.paint // -> prompts
+
+<b>Ruby</b>
+class Car
+
+def inilize name
+@name = name
+end
+
+def paint(color)
+@color = color
+end
+
+end
+</code></pre>
+</p>
+
+</section>
+<footer>
+  <ul class="footer-bar style-none">
+  <li class="social-logo"><a href="http://instagram.com/cusackpeter"><img src="images/instagram-logo.jpg" alt="instagram socail link cusackpeter" ></a></li>
+  <li class="social-logo"><a href="https://twitter.com/PeterCusack_"><img src="images/twitter-logo.jpg" alt="twitter socail link cusackpeter" ></a></li>
+  <li class="social-logo"><a href="https://github.com/PeterCusack"><img src="images/github-logo.jpg" alt="github socail link petercuasck" ></a> </li>
+  </ul>
+</footer>
+</body>
+</html>
